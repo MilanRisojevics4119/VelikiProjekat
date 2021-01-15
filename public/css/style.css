@@ -1,0 +1,600 @@
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "Spartan", sans-serif;
+    }
+    
+    body {
+        background-color: #012650;
+    }
+    
+    .main {
+        z-index: 700;
+    }
+    
+    .collapse.in {
+        display: flex;
+        background-color: #f8f9fa;
+        transition: all 0.3s ease;
+    }
+    
+    header {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        background-color: rgba(0, 174, 255, .05);
+        top: 0;
+        border-bottom: 1px solid hsla(0, 0%, 100%, .15);
+        z-index: 701;
+    }
+    
+    .backdrop {
+        background-image: url('../images/assets/bg-backdrop.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 100%;
+        min-height: 100vh;
+        z-index: -1;
+    }
+    
+    header nav {
+        width: 100%
+    }
+    
+    p {
+        display: inline;
+        font-size: 16px;
+    }
+    
+    h2 {
+        color: #cecece;
+    }
+    
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 100;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    
+    a:hover {
+        transition: color 0.4s;
+        color: white;
+        text-decoration: none;
+    }
+    
+    li {
+        display: inline-block;
+    }
+    
+    .mainUl li {
+        padding-left: 15px;
+        margin-right: 15px;
+    }
+    
+    .mainUl li p {
+        color: #cecece;
+        text-decoration: none;
+        font-weight: 100;
+        font-size: 13px;
+        letter-spacing: 3px;
+        cursor: default;
+    }
+    
+    .logoImg {
+        width: 80px;
+        height: 65px;
+        object-fit: contain;
+        padding: 5px 0px;
+        object-fit: cover;
+    }
+    /* End of some minor css for overall all pages */
+    /* Specific page start - Games */
+    
+    section.games .game {
+        width: 500px;
+        background-image: url('../images/assets/game-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: solid 1px #00aeff;
+        font-size: 18px;
+        font-weight: 400;
+        color: #fff;
+        text-decoration: none;
+        transition: all 200ms ease;
+        line-height: normal;
+        box-sizing: border-box;
+    }
+    
+    section.games .featured-tab {
+        color: #fff;
+        margin-bottom: 35px;
+        position: relative;
+        font-size: 14.4px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        background-color: hsla(0, 0%, 100%, .05);
+        height: 44px;
+        border-bottom: 1px solid hsla(0, 0%, 100%, .15);
+        padding-left: 40px;
+    }
+    
+    section.games .categories-main {
+        color: #fff;
+        position: relative;
+        font-size: 14.4px;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        margin-top: 40px;
+        background-color: hsla(0, 0%, 100%, .05);
+        height: 84px;
+        border-bottom: 1px solid hsla(0, 0%, 100%, .15);
+        border-top: 1px solid hsla(0, 0%, 100%, .15);
+        padding-left: 40px;
+    }
+    
+    section.games .featured-tab h3 {
+        font-size: 16px;
+        margin: 0;
+    }
+    
+    section.games .btn-custom {
+        border: solid 1px #0938cf;
+        color: #fff;
+        background-image: url('../images/assets/btn-color.png');
+        cursor: pointer;
+    }
+    
+    section.games .btn-custom:hover {
+        box-shadow: inset 0px 0px 15px 5px rgb(255 255 255);
+    }
+    
+    section.games .game img.mainImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+    
+    section.games .games-holder {
+        justify-content: space-between;
+    }
+    
+    section.games .game img.icon {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        object-fit: cover;
+        right: 5%;
+        top: 8%;
+        box-shadow: inset 0px 0px 20px 10px rgb(255 255 255), 0px 0px 20px 6px rgb(255 255 255);
+    }
+    
+    section.games .game .game-image {
+        position: relative;
+        height: 300px;
+    }
+    /* Games end */
+    /*Specific page start - Single game */
+    
+    section.game-section {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    section.game-section .game {
+        max-width: 1200px;
+        background-image: url('../images/assets/game-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: solid 1px #00aeff;
+        font-size: 18px;
+        font-weight: 400;
+        color: #fff;
+        text-decoration: none;
+        transition: all 200ms ease;
+        line-height: normal;
+        box-sizing: border-box;
+    }
+    
+    section.game-section .game img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+    }
+    
+    section.game-section .game img.icon {
+        width: 50px;
+        height: 50px;
+        right: 8%;
+        top: 6%;
+    }
+    
+    section.game-section .game-image {
+        position: relative;
+        height: 400px;
+    }
+    
+    section.game-section .btn-custom {
+        border: solid 1px #0938cf;
+        color: #fff;
+        background-image: url('../images/assets/btn-color.png');
+        cursor: pointer;
+    }
+    
+    section.game-section .btn-custom:hover {
+        box-shadow: inset 0px 0px 15px 5px rgb(255 255 255);
+    }
+    /* Single game end */
+    /* Specific page start - Register */
+    
+    section.register {
+        margin-top: 150px;
+    }
+    
+    .register-games {
+        height: 300px;
+    }
+    /* Register end */
+    /* Specific page start - Dashboard */
+    
+    section.dashboard {
+        display: flex;
+    }
+    
+    section.dashboard .account {
+        margin-top: 60px;
+    }
+    
+    section.dashboard .account .top h1 {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 35px;
+        padding-bottom: 30px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    
+    section.dashboard .account .bottom {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section.dashboard .account .bottom .first-part {
+        display: flex;
+        height: fit-content;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    section.dashboard .account .bottom .first-part .your-info {
+        height: 100%;
+        border-radius: 0;
+        border-top: 1px solid hsla(0, 0%, 100%, .1);
+        color: #fff;
+        background-color: rgba(9, 85, 135, .34);
+        width: 100%;
+        max-width: 565px;
+    }
+    
+    section.dashboard .account .bottom .first-part .your-info h1 {
+        font-size: 20px;
+        color: #fff;
+        padding: 30px 40px;
+        background-color: rgba(9, 85, 135, .1);
+        margin-bottom: 0;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 0;
+    }
+    
+    section.dashboard .account .bottom .first-part .your-info .user-info {
+        padding: 40px;
+    }
+    
+    section.dashboard .account .bottom .first-part .your-info .user-info .row-custom {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    section.dashboard .account .bottom .first-part .your-info .user-info .row-custom p:first-child {
+        font-size: 14px;
+        color: #afb3bb;
+        overflow-wrap: normal;
+        line-height: 26px;
+    }
+    
+    section.dashboard .account .bottom .first-part .account-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        border-radius: 0;
+        width: 100%;
+        max-width: 565px;
+        border-top: 1px solid hsla(0, 0%, 100%, .1);
+        color: #fff;
+        background-color: rgba(9, 85, 135, .34);
+        padding-bottom: 45px;
+    }
+    
+    section.dashboard .account .bottom .first-part .account-image h1 {
+        font-size: 20px;
+        color: #fff;
+        background-color: rgba(9, 85, 135, .1);
+        margin-bottom: 0;
+        text-transform: uppercase;
+        display: block;
+        padding: 40px;
+        margin-bottom: 0;
+    }
+    
+    section.dashboard .account .bottom .first-part .account-image img {
+        width: 200px;
+        border-radius: 100px;
+        height: 200px;
+        object-fit: cover;
+        border: 4px solid #00aeff;
+    }
+    
+    section.dashboard .account .bottom .second-part {
+        display: flex;
+        height: fit-content;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    section.dashboard .account .bottom .second-part .game-info {
+        margin-top: 40px;
+        min-height: 400px;
+        border-radius: 0;
+        border-top: 1px solid hsla(0, 0%, 100%, .1);
+        color: #fff;
+        background-color: rgba(9, 85, 135, .34);
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    section.dashboard .account .bottom .second-part .game-info h1 {
+        font-size: 20px;
+        color: #fff;
+        background-color: rgba(9, 85, 135, .1);
+        margin-bottom: 0;
+        text-transform: uppercase;
+        display: block;
+        padding: 40px;
+        margin-bottom: 0;
+    }
+    
+    section.dashboard .account .bottom .second-part .game-info .games-holder {
+        padding: 40px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    section.dashboard .account .bottom .second-part .game-info .games-holder .game {
+        width: 280px;
+        height: 200px;
+        background-color: rgb(9 106 135 / 46%);
+    }
+    
+    section.dashboard .account .bottom .second-part .game-info .games-holder .game img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    section.dashboard .account .bottom .turd-part {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    section.dashboard .account .bottom .turd-part .edit-buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    section.dashboard .account .bottom .turd-part .edit-buttons button {
+        width: 185px;
+        height: 48px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    section.dashboard .account .bottom .turd-part #cancelButton {
+        display: none;
+        opacity: 0;
+        transition: 0.8s all ease;
+    }
+    
+    section.dashboard .account .bottom .turd-part .edit-info {
+        margin-top: 40px;
+        min-height: 400px;
+        border-radius: 0;
+        border-top: 1px solid hsla(0, 0%, 100%, .1);
+        color: #fff;
+        background-color: rgba(9, 85, 135, .34);
+        width: 100%;
+        max-width: 100%;
+        opacity: 0;
+        display: none;
+        flex-direction: column;
+        transition: 1.3s all ease;
+    }
+    
+    section.dashboard .account .bottom .turd-part .info-holder {
+        height: 100%;
+    }
+    
+    section.dashboard .account .bottom .turd-part .edit-info #editSubmit {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    
+    section.dashboard .account .bottom .turd-part .info-holder .user-info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    section.dashboard .account .bottom .turd-part .edit-info .info-holder {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section.dashboard .account .bottom .turd-part .info-holder .user-info .row-custom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    section.dashboard .account .bottom .turd-part .info-holder .user-info .row-custom textarea {
+        min-height: 300px;
+        min-width: 100%;
+    }
+    
+    section.dashboard .account .bottom .turd-part .info-holder .user-info .row-custom.last-row {
+        flex-direction: column;
+    }
+    
+    section.dashboard .account .bottom .turd-part .info-holder .user-info .row-custom input {
+        width: 310px;
+    }
+    
+    section.dashboard .account .bottom .turd-part .info-holder .user-info .row-custom p {
+        margin: 0;
+    }
+    
+    section.dashboard .account .bottom .turd-part .edit-info h1 {
+        font-size: 20px;
+        color: #fff;
+        background-color: rgba(9, 85, 135, .1);
+        margin-bottom: 0;
+        text-transform: uppercase;
+        display: block;
+        padding: 40px;
+        width: 100%;
+    }
+    
+    section.dashboard .account .bottom .admin-part .users-info {
+        margin-top: 40px;
+        min-height: 400px;
+        border-radius: 0;
+        border-top: 1px solid hsla(0, 0%, 100%, .1);
+        color: #fff;
+        background-color: rgba(9, 85, 135, .34);
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    section.dashboard .account .bottom .admin-part .users-info h1 {
+        font-size: 20px;
+        color: #fff;
+        background-color: rgba(9, 85, 135, .1);
+        margin-bottom: 0;
+        text-transform: uppercase;
+        display: block;
+        padding: 40px;
+        width: 100%;
+    }
+    
+    section.dashboard .account .bottom .admin-part .users-info .users-table .heading-tab {
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        align-items: center;
+        border: 1px solid hsla(0, 0%, 100%, .1);
+        background-image: url('../images/assets/btn-color.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    section.dashboard .account .bottom .admin-part .users-info .users-table .heading-tab p {
+        margin: 0;
+    }
+    
+    section.dashboard .account .bottom .admin-part .users-info .users-table .user-tab {
+        display: flex;
+        height: fit-content;
+        align-items: center;
+        border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+        border-left: 1px solid hsla(0, 0%, 100%, .1);
+        border-right: 1px solid hsla(0, 0%, 100%, .1);
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    section.dashboard .account .bottom .admin-part .users-info .users-table .user-tab .user-div {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        align-items: center;
+    }
+    
+    section.dashboard .account .bottom .admin-part .users-info .users-table .user-tab .user-div p {
+        margin: 0;
+    }
+    /* Dashboard End */
+    /* EDIT PAGES */
+    
+    section.user-edit label,
+    section.game-edit label {
+        color: #fff;
+    }
+    /* EDIT PAGES END */
+    /* Specific page start - Footer */
+    
+    footer {
+        height: 500px;
+        margin-top: 50px;
+        background-image: url('../images/assets/footer.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    footer .footer-links {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer .footer-links li {
+        padding-top: 7px;
+    }
+    
+    footer p,
+    footer a,
+    footer h1,
+    footer h2,
+    footer h3,
+    footer h4,
+    footer h5,
+    footer h6 {
+        color: #ffffff;
+    }
+    
+    footer hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid #cecece;
+    }
+    /* Footer end */
